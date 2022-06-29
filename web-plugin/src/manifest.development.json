@@ -1,0 +1,35 @@
+{
+    "manifest_version": 3,
+    "name": "XSS-det",
+    "description": "Detect XSS attacks",
+    "version": "1.0.0",
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": ["http://*/*", "https://*/*"],
+            "js": [
+                "/content.js"
+            ]
+        }
+    ],
+    "options_page": "options.html",
+    "devtools_page": "devtools.html",
+    "permissions": [
+        "tabs",
+        "storage"
+    ],
+    "host_permissions": [
+        "http://*/*",
+        "https://*/*"
+    ],
+    "icons": {
+        "16": "/images/icon.png",
+        "48": "/images/icon.png",
+        "128": "/images/icon.png" 
+    }
+}
