@@ -23,9 +23,15 @@
     "devtools_page": "devtools.html",
     "permissions": [
         "activeTab",
+        "storage",
         "webNavigation",
         "tabs",
         "http://*/*",
         "https://*/*"
-    ]
+    ],
+    "icons": {
+        "16": "/assets/icon.png",
+        "48": "/assets/icon.png",
+        "128": "/assets/icon.png" 
+    }
 }

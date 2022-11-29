@@ -28,8 +28,8 @@
         "https://*/*"
     ],
     "icons": {
-        "16": "/images/icon.png",
-        "48": "/images/icon.png",
-        "128": "/images/icon.png" 
+        "16": "/assets/icon.png",
+        "48": "/assets/icon.png",
+        "128": "/assets/icon.png" 
     }
 }
